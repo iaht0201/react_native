@@ -1,4 +1,4 @@
-import { View, Text, TextInput, Button } from 'react-native'
+import { View, Text, TextInput, Button, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { styles } from '../style'
 import StateTodo from '../state/state_todo'
@@ -8,17 +8,20 @@ const Form = () => {
     return (
         <View style={styles.addTask}>
             <TextInput
+                placeholder='Hãy viết gì đó...'
                 style={styles.input}
                 onChangeText={(e) => {
                     changeText(e)
                 }}
                 value={text}
             />
-            <View style={styles.iconWrapper} >
-                <Text style={styles.icon}>
-                    +
-                </Text>
-            </View>
+            <TouchableOpacity>
+                <View style={styles.iconWrapper} >
+                    <Text style={styles.icon}>
+                        +
+                    </Text>
+                </View>
+            </TouchableOpacity>
         </View>
     )
 }

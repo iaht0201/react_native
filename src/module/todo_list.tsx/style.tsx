@@ -1,12 +1,12 @@
 import { StyleSheet } from "react-native"
 import { Colors } from "react-native/Libraries/NewAppScreen"
-
+import color from "../todo_list.tsx/ulti/constant/Color"
 export const styles = StyleSheet.create({
     container: {
         height: 100,
         flexDirection: 'column',
         flex: 1,
-        backgroundColor: '#eff7f8'
+        backgroundColor: color.background
     },
     body: {
         paddingTop: 20,
@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
     },
     header: {
         fontSize: 20,
-        color: '#21a3d0',
+        color: color.primary,
         fontWeight: 'bold'
     },
     item: {
@@ -30,7 +30,7 @@ export const styles = StyleSheet.create({
     number: {
         paddingHorizontal: 15,
         paddingVertical: 10,
-        backgroundColor: '#DF928E',
+        backgroundColor: color.redColor60,
         textAlign: 'center',
         margin: 'auto',
         borderRadius: 8,
@@ -43,7 +43,7 @@ export const styles = StyleSheet.create({
 
     },
     selected: {
-        backgroundColor: '#d62828',
+        backgroundColor: color.redColor,
     },
     input: {
         width: '80%',
@@ -68,7 +68,7 @@ export const styles = StyleSheet.create({
     iconWrapper: {
         width: 44,
         height: 44,
-        backgroundColor: '#21a3d0',
+        backgroundColor: color.primary,
         borderRadius: 44,
         alignItems: 'center',
         justifyContent: 'center',
