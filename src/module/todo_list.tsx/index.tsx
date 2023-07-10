@@ -12,6 +12,7 @@ const TodoList = () => {
     const handleTask = (task: string): void => {
 
         if (task === null || task.length === 0) {
+            setIndexSelected(-1)
             alert("Vui lòng nhập task")
         }
         else if (taskList.some((item: any) => item.includes(task))) {
